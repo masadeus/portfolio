@@ -927,6 +927,10 @@ input[type="button"]:focus {
   z-index: 1;
 }
 
+.about__content .small-copy {
+  text-align: left;
+}
+
 .about__content-signature {
   position: absolute;
   bottom: -175px;
@@ -1068,6 +1072,23 @@ input[type="button"]:focus {
 }
 
 /************************* Web Design *************************/
+.web-design.left .web-design__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.web-design.left .web-design__visual {
+  left: 52%;
+}
+
+.web-design.automatli .web-design__visual {
+  background-image: url("../img/automatli-1.png");
+}
+
 .web-design {
   position: relative;
   width: 100%;
