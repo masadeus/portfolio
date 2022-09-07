@@ -196,6 +196,9 @@
 			size: 100%
 			repeat: no-repeat
 
+	&__visual.large
+		height: 900px
+
 	@media (max-width: 991px)
 
 		&__content
@@ -251,19 +254,22 @@
 
 .web-design.automatli
 	.web-design__visual
+		z-index: 2
 		background:
-			image: url("../img/automatli-1.png")
+			image: url("../img/automatli/leistungen-header.svg")
 
 .web-design.sojournal-1
 	.web-design__visual
 		background:
-			image: url('../img/sojournal-screens.png')
+			image: url('../img/sojournal/sojournal-screens.png')
 
 .web-design.hellmann
 	.web-design__visual
-		width: 630px
 		background:
-			image: url('../img/hellmann-portada.png')
+			image: url('../img/hellmann/hellmann-portada-6.png')
+		z-index: 2
+
+
 
 // .web-design.hellmann
 // 	video
@@ -274,12 +280,24 @@
 // 		margin: 0
 // 		max-width: -webkit-fill-available;
 
+.circle
+	position: absolute
+	height: 1100px
+	width: 1100px
+	background-color: #feeae0
+	border-radius: 800px
+	top: 0
+	right: 0
+	z-index: 0
+	opacity: .4
+	-webkit-transform: translateX(0%)
+	transform: translate(20%, -160px)
 .web-design
 	position: relative
 	width: 100%
-	padding: 200px 0
+	padding: 400px 0px 200px 0;
 	background-color: $bg-secondary
-	overflow: hidden
+	overflow: visible
 
 	&__wrapper
 		display: flex
@@ -298,6 +316,8 @@
 			position: center
 			size: 100%
 			repeat: no-repeat
+	&__visual.down
+		transform: translateY(-15%)
 
 	@media (max-width: 991px)
 

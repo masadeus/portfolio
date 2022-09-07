@@ -496,7 +496,7 @@ input[type="button"]:focus {
   margin: 0 0 15px 0;
   color: #585858;
   font-size: 58px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .blurb__copy {
@@ -1029,6 +1029,10 @@ input[type="button"]:focus {
   background-repeat: no-repeat;
 }
 
+.app-design__visual.large {
+  height: 900px;
+}
+
 @media (max-width: 991px) {
   .app-design__content h2 {
     font-size: 48px;
@@ -1090,24 +1094,39 @@ input[type="button"]:focus {
 }
 
 .web-design.automatli .web-design__visual {
-  background-image: url("../img/automatli-1.png");
+  z-index: 2;
+  background-image: url("../img/automatli/leistungen-header.svg");
 }
 
 .web-design.sojournal-1 .web-design__visual {
-  background-image: url("../img/sojournal-screens.png");
+  background-image: url("../img/sojournal/sojournal-screens.png");
 }
 
 .web-design.hellmann .web-design__visual {
-  width: 630px;
-  background-image: url("../img/hellmann-portada.png");
+  background-image: url("../img/hellmann/hellmann-portada-6.png");
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  height: 1100px;
+  width: 1100px;
+  background-color: #feeae0;
+  border-radius: 800px;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  opacity: .4;
+  -webkit-transform: translateX(0%);
+  transform: translate(20%, -160px);
 }
 
 .web-design {
   position: relative;
   width: 100%;
-  padding: 200px 0;
+  padding: 400px 0px 200px 0;
   background-color: #fafafa;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .web-design__wrapper {
@@ -1132,6 +1151,11 @@ input[type="button"]:focus {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.web-design__visual.down {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
 }
 
 @media (max-width: 991px) {
