@@ -195,7 +195,7 @@
 
 	&__wrapper
 		display: flex
-		justify-content: flex-end
+		justify-content: flex-start
 
 	&__visual
 		position: absolute
@@ -494,6 +494,21 @@
 	p
 		margin-bottom: 1rem
 
+.web-design.right
+	.project
+		.project-copy-container
+			position: absolute
+			z-index: 2
+			display: -ms-grid
+			display: grid
+			-ms-grid-columns: 1fr 1fr
+			grid-template-columns: 1fr 1fr
+			width: 600px
+			margin-left: 0
+			gap: 2rem
+			left: 53%
+			top: 266px
+
 .web-design.left
 	.web-design__wrapper
 		display: flex
@@ -510,20 +525,52 @@
 	.web-design__visual.move-out-side
 		left: 100vw
 
-	.web-design
+.web-design.right
 	.web-design__visual.move-out-side
 		right: 100vw
 
 .web-design.sojournal
-	.web-design__visual
-		top: 550px
-	    right: 43%
-		height: 1281px
-		img
-			max-width: -webkit-fill-available
+	height: auto
+	.web-design__wrapper
+		position: absolute
+		z-index: 3
+		left: 53%
 
+	.web-design__visual
+		top: 470px
+		right: 48%
+		height: 1150px
+		img
+			max-width: stretch
+			z-index: 2
+			position: absolute
+			opacity: 0.7
+	.project.shown
+		height: 1300px
+
+		img
+		    top: 270px
+		    z-index: 1
+		    left: 50%
+		    width: 150%
+		    transform: translateX(-50%)
+		    max-width: 2500px
 .web-design.hellmann
 	.web-design__visual
 		background:
 		image: url('../img/hellmann/hellmann-portada-5.png')
 		z-index: 2
+
+.circle
+	position: absolute
+	height: 1300px
+	width: 1300px
+	background-color: #fbdbea
+	background-image: linear-gradient(to right, #fbdbea , #fbdbea, #fbdbea , #dbe7fb)
+	border-radius: 800px
+	top: -200px
+	right: 500px
+	z-index: 0
+	opacity: .4
+	-webkit-transform: translateX(0%)
+	transform: translate(20%, -160px)
