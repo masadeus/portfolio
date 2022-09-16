@@ -1416,8 +1416,9 @@ input[type="button"]:focus {
 }
 
 .web-design.sojournal .web-design__visual {
-  top: 200px;
-  right: 43%;
+  top: 550px;
+  top-right: 43%;
+  height: 1281px;
 }
 
 .web-design.sojournal .web-design__visual img {
