@@ -1033,9 +1033,9 @@ input[type="button"]:focus {
   width: 828px;
   height: 581px;
   margin: 0;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  position: center;
+  size: 100%;
+  repeat: no-repeat;
   -webkit-transform: translateY(-15%);
           transform: translateY(-15%);
   -webkit-transition: 0.3s ease-in-out;
@@ -1415,8 +1415,17 @@ input[type="button"]:focus {
   right: 100vw;
 }
 
+.web-design.sojournal .web-design__visual {
+  top: 200px;
+  right: 43%;
+}
+
+.web-design.sojournal .web-design__visual img {
+  max-width: -webkit-fill-available;
+}
+
 .web-design.hellmann .web-design__visual {
-  background-image: url("../img/hellmann/hellmann-portada-5.png");
+  image: url("../img/hellmann/hellmann-portada-5.png");
   z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */
