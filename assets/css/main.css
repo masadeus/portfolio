@@ -892,7 +892,7 @@ input[type="button"]:focus {
 .about {
   position: relative;
   width: 100%;
-  height: 625px;
+  height: 800px;
   background-color: #fafafa;
 }
 
@@ -906,6 +906,7 @@ input[type="button"]:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  height: 700px;
 }
 
 .about__wrapper::before {
@@ -1011,7 +1012,7 @@ input[type="button"]:focus {
 .web-design {
   position: relative;
   width: 100%;
-  padding: 400px 0px 200px 0;
+  padding: 400px 0px 0px 0;
   background-color: #fafafa;
   overflow: visible;
 }
@@ -1027,7 +1028,7 @@ input[type="button"]:focus {
 
 .web-design__visual {
   position: absolute;
-  top: 400px;
+  top: 0px;
   right: 52%;
   width: 828px;
   height: 581px;
@@ -1320,15 +1321,15 @@ input[type="button"]:focus {
 /************************* Project *************************/
 .project {
   max-width: 100vw;
-  max-height: 0;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
   opacity: 0;
   padding: 40px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e5e3e3));
-  background: linear-gradient(180deg, #fafafa 0%, #e5e3e3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eef8f8));
+  background: linear-gradient(180deg, #fafafa 0%, #eef8f8 100%);
   position: relative;
-  height: 1200px;
+  height: 1600px;
+  max-height: 500px;
 }
 
 .project.shown {
@@ -1439,9 +1440,9 @@ input[type="button"]:focus {
 }
 
 .web-design.sojournal .web-design__visual {
-  top: 470px;
+  top: 380px;
   right: 48%;
-  height: 1150px;
+  height: 1350px;
 }
 
 .web-design.sojournal .web-design__visual img {
@@ -1453,11 +1454,11 @@ input[type="button"]:focus {
   opacity: 0.7;
 }
 
-.web-design.sojournal .project.shown {
-  height: 1300px;
+.web-design.sojournal .project {
+  max-height: 800px;
 }
 
-.web-design.sojournal .project.shown img {
+.web-design.sojournal .project img {
   top: 270px;
   z-index: 1;
   left: 50%;
@@ -1465,6 +1466,10 @@ input[type="button"]:focus {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   max-width: 2500px;
+}
+
+.web-design.sojournal .project.shown {
+  max-height: 1400px;
 }
 
 .web-design.hellmann .web-design__visual {
@@ -1486,5 +1491,23 @@ input[type="button"]:focus {
   opacity: .4;
   -webkit-transform: translateX(0%);
   transform: translate(20%, -160px);
+}
+
+.abk .web-design__visual .circle {
+  background-image: -webkit-gradient(linear, left top, right top, from(#acf2fc), color-stop(#d3f5e8), color-stop(#d3f5e8), to(#acf2fc));
+  background-image: linear-gradient(to right, #acf2fc, #d3f5e8, #d3f5e8, #acf2fc);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  right: -20%;
+  top: 200px;
+  z-index: -1;
+  height: 1000px;
+  width: 1000px;
+}
+
+.abk .web-design__visual img {
+  opacity: 0.8;
+  -webkit-transform: translate(-200px, 400px);
+          transform: translate(-200px, 400px);
 }
 /*# sourceMappingURL=main.css.map */
