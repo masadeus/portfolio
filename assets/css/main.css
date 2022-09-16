@@ -1422,11 +1422,11 @@ input[type="button"]:focus {
 }
 
 .web-design.left .web-design__visual.move-out-side {
-  left: 100vw;
+  left: 200vw;
 }
 
 .web-design.right .web-design__visual.move-out-side {
-  right: 100vw;
+  right: 200vw;
 }
 
 .web-design.sojournal {
@@ -1447,8 +1447,6 @@ input[type="button"]:focus {
 
 .web-design.sojournal .web-design__visual img {
   max-width: -webkit-fill-available;
-  max-width: -moz-available;
-  max-width: stretch;
   z-index: 2;
   position: absolute;
   opacity: 0.7;
@@ -1493,7 +1491,7 @@ input[type="button"]:focus {
   transform: translate(20%, -160px);
 }
 
-.abk .web-design__visual .circle {
+.web-design.abk .web-design__visual .circle {
   background-image: -webkit-gradient(linear, left top, right top, from(#acf2fc), color-stop(#d3f5e8), color-stop(#d3f5e8), to(#acf2fc));
   background-image: linear-gradient(to right, #acf2fc, #d3f5e8, #d3f5e8, #acf2fc);
   -webkit-transform: translate(0, 0);
@@ -1505,9 +1503,14 @@ input[type="button"]:focus {
   width: 1000px;
 }
 
-.abk .web-design__visual img {
+.web-design.abk .web-design__visual img {
   opacity: 0.8;
   -webkit-transform: translate(-200px, 400px);
           transform: translate(-200px, 400px);
+}
+
+.web-design.abk .project img {
+  left: -200px;
+  max-width: 140vw;
 }
 /*# sourceMappingURL=main.css.map */
