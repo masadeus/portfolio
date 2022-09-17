@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 855.4 614.9" style="enable-background:new 0 0 855.4 614.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:url(#Intersection_1_00000076588286092601735010000000364234099201282959_);}
+	.st0{fill:url(#Intersection_1_00000003783529901293924120000004958667427759842233_);}
 	.st1{fill:#54AFD1;}
 	.st2{opacity:0.1;fill:#535E7B;enable-background:new    ;}
 	.st3{opacity:0.8;fill:#7BC5E0;enable-background:new    ;}
@@ -29,16 +29,16 @@
 </style>
 <g id="Intersection_1_00000005973000139758258160000011617861218432630418_">
 	
-		<image style="overflow:visible;" width="928" height="667" xlink:href="ED1EF96E96D92C3C.png"  transform="matrix(1 0 0 1 -36 4.92)">
+		<image style="overflow:visible;" width="928" height="667" xlink:href="ED1EF96E96D92C3F.png"  transform="matrix(1 0 0 1 -36 4.92)">
 	</image>
 </g>
-<linearGradient id="Intersection_1_00000157291660250949169690000013259466452252090288_" gradientUnits="userSpaceOnUse" x1="-938.8051" y1="977.386" x2="-938.515" y2="978.236" gradientTransform="matrix(855.43 0 0 -594.5 803351.9375 581644.125)">
+<linearGradient id="Intersection_1_00000008108430506685501870000004299668223561032580_" gradientUnits="userSpaceOnUse" x1="-938.8051" y1="977.386" x2="-938.515" y2="978.236" gradientTransform="matrix(855.43 0 0 -594.5 803351.9375 581644.125)">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="0.1159" style="stop-color:#FFFFFF"/>
 	<stop  offset="0.79" style="stop-color:#EAF3FC"/>
 	<stop  offset="1" style="stop-color:#CDE9F4"/>
 </linearGradient>
-<path id="Intersection_1" style="fill:url(#Intersection_1_00000157291660250949169690000013259466452252090288_);" d="M331,613.7
+<path id="Intersection_1" style="fill:url(#Intersection_1_00000008108430506685501870000004299668223561032580_);" d="M331,613.7
 	L80.5,469C30.5,394.8,2.6,308,0,218.5L340.1,21.8c3.4-1.8,7.5-1.8,11-0.1l502.1,289.9c3,1.7,2.9,4.6-0.2,6.3L342,613.5
 	c-1.7,0.9-3.7,1.4-5.7,1.4C334.5,615,332.6,614.5,331,613.7z"/>
 <path id="Intersection_1-2" class="st1" d="M323.2,31.5l16.9-9.7c3.1-1.6,6.6-1.8,9.9-0.7l504.2,291.2c1.4,1,1.7,2.8,0.7,4.2
