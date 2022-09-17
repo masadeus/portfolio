@@ -217,6 +217,10 @@ th {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   font-size: 14px;
@@ -1271,4 +1275,21 @@ input[type=button]:focus {
 }
 .web-design.abk .project.shown {
   max-height: 1200px;
+}
+
+.web-design.automatli .web-design__visual .circle {
+  height: 800px;
+  width: 800px;
+  top: 150px;
+  z-index: 1;
+  left: -205px;
+  background-image: linear-gradient(to left, #fcecd3, #dbe7fb);
+}
+.web-design.automatli .web-design__visual img {
+  position: absolute;
+  top: 180px;
+  left: -50px;
+  width: 800px;
+  z-index: 3;
+  filter: drop-shadow(24px 24px 6px rgba(0, 0, 0, 0.1));
 }/*# sourceMappingURL=main.css.map */
