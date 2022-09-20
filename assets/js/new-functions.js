@@ -5,7 +5,9 @@ for ( const section of sections) {
     section.addEventListener( 'click', event => {
         if ( event.target.classList.value === 'transform-link' ) {
             section.querySelector( '.project' ).classList.toggle( 'shown' )
-            section.querySelector( '.web-design__visual' ).classList.toggle( 'move-out-side' )
+            if ( window.innerWidth >= 767 ) {
+                section.querySelector( '.web-design__visual' ).classList.toggle( 'move-out-side' )
+            }
 
             if ( section.querySelector( '.project' ).classList.contains('shown') ) {
                 section.querySelector( '.transform-link' ).innerText = "Seen enough!"

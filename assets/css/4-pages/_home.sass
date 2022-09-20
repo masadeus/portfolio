@@ -214,7 +214,6 @@
 	@media (max-width: 991px)
 
 		&__content
-
 			h2
 				font-size: 48px
 
@@ -225,11 +224,11 @@
 
 	@media (max-width: 767px)
 
-		height: 525px
 		padding: 300px 0
 
 		&__wrapper
 			justify-content: center
+			margin-top: 432px
 
 		&__content
 			text-align: center
@@ -439,6 +438,20 @@
 			transform: translate(0, 0)
 			order: 2
 
+.circle
+	position: absolute
+	height: 1300px
+	width: 1300px
+	background-color: #fbdbea
+	background-image: linear-gradient(to right, #fbdbea , #fbdbea, #fbdbea , #dbe7fb)
+	border-radius: 800px
+	top: -200px
+	right: 500px
+	z-index: 0
+	opacity: .4
+	-webkit-transform: translateX(0%)
+	transform: translate(20%, -160px)
+
 /************************* Project *************************/
 
 .project
@@ -471,8 +484,7 @@
 	.project-copy-container
 		position: absolute
 		z-index: 2
-		display: grid
-		grid-template-columns: 1fr 1fr
+		display: flex
 		width: 600px
 		margin-left: calc((100vw - 980px)/2)
 		gap: 2rem
@@ -497,28 +509,62 @@
 		font-weight: 600
 	p
 		margin-bottom: 1rem
+.project
+	@media (max-width: 767px)
+		height: 0
+		.project-copy-container
+			flex-direction: column
+			margin-left: 0
+			padding: 0 2rem 0 5rem
+			width: unset
+			border-right: 0
+			gap: 0
+			position: unset
+			.project-copy:first-child
+				border-right: 0
+
+		img
+			width: 1700px
+			position: relative
+			z-index: 1
+			left: 50%
+			transform: translateX(-40%)
+			top: -100px
+
+.project.shown
+	@media (max-width: 767px)
+		height: 1400px
 
 .web-design.right
 	.project
 		.project-copy-container
 			position: absolute
 			z-index: 2
-			display: -ms-grid
-			display: grid
-			-ms-grid-columns: 1fr 1fr
-			grid-template-columns: 1fr 1fr
+			display: flex
 			width: 600px
 			margin-left: 0
 			gap: 2rem
 			left: 53%
 			top: 266px
+			@media (max-width: 767px)
+				flex-direction: column
+				gap: 0
+				left: 0
+				width: auto
+				top: 142px
+
+			.project-copy
+				width: 300px
+				@media (max-width: 767px)
+					width: 100%
 
 .web-design.left
 	.web-design__wrapper
 		display: flex
-		justify-content: flex-start
 	.web-design__visual
 		left: 52%
+
+/************************* Automatli *************************/
 
 .web-design.automatli
 	.web-design__visual
@@ -533,6 +579,38 @@
 	.web-design__visual.move-out-side
 		right: 200vw
 
+.web-design.automatli
+	.web-design__visual
+		width: 800px
+		height: 800px
+		.circle
+			height: 100%
+			width: 100%
+			top: 150px
+			z-index: 1
+			left: -205px
+			background-image: linear-gradient(to left, #fcecd3, #dbe7fb)
+		img
+			position: absolute
+			top: 180px
+			left: -50px
+			width: 100%
+			z-index: 3
+			filter: drop-shadow(24px 24px 6px rgb(0,0,0,.1))
+
+	@media (max-width: 767px)
+		.web-design__visual
+			width: 400px
+			height: 400px
+			.circle
+				transform: translateX(-50%)
+				left: 50%
+				top: 0px
+			img
+				left: 0px
+				top: 100px
+/************************* Sojournal *************************/
+
 .web-design.sojournal
 	height: auto
 	.web-design__wrapper
@@ -543,14 +621,18 @@
 	.web-design__visual
 		top: 380px
 		right: 48%
-		height: 1350px
+		height: 1400px
+		width: 1400px
 		img
 			max-width: 900px
 			z-index: 2
 			position: absolute
+			transform: translateX(50%)
+	.circle
+		width: 100%
+		height: 100%
 	.project
 		max-height: 800px
-
 		img
 			top: 410px
 			z-index: 1
@@ -558,30 +640,48 @@
 			width: 150%
 			transform: translateX(-50%)
 			max-width: 2500px
+			@media (max-width: 767px)
+				width: 250%
 
 	.project.shown
 		max-height: 1400px
 
-.web-design.hellmann
-	.web-design__visual
-		image: url('../img/hellmann/hellmann-portada-5.png')
-		z-index: 2
+	@media (max-width: 767px)
+		.web-design__wrapper
+			left: 50%
+			top: 100px
+			transform: translateX(-50%)
 
-.circle
-	position: absolute
-	height: 1300px
-	width: 1300px
-	background-color: #fbdbea
-	background-image: linear-gradient(to right, #fbdbea , #fbdbea, #fbdbea , #dbe7fb)
-	border-radius: 800px
-	top: -200px
-	right: 500px
-	z-index: 0
-	opacity: .4
-	-webkit-transform: translateX(0%)
-	transform: translate(20%, -160px)
+		.web-design__visual
+			position: relative
+			top: 260px
+			height: 700px
+			width: 700px
+			img
+				max-width: 500px
+				top: -312px
+				transform: translateX(-50%)
+				left: 50%
+			.circle
+				right: 50%
+		.project
+			max-height: 0
+		.project.shown
+			max-height: 1400px
+			height: 1000px
+			top: -100px
+			.project-copy-container
+				top: -40px
+			img
+				top: 250px
+
+/************************* ABK *************************/
 
 .web-design.abk
+	.web-design__wrapper
+		@media (max-width: 767px)
+				margin-top: 0
+				top: 0
 	.web-design__visual
 		.circle
 			background-image: linear-gradient(to right, #acf2fc, #d3f5e8, #d3f5e8, #acf2fc)
@@ -605,43 +705,9 @@
 	.project.shown
 		max-height: 1200px
 
-.web-design.automatli
-	// margin: 200px 0 0 0
-	.web-design__visual
-		width: 800px
-		height: 800px
-		.circle
-			height: 100%
-			width: 100%
-			top: 150px
-			z-index: 1
-			left: -205px
-			background-image: linear-gradient(to left, #fcecd3, #dbe7fb)
-		img
-			position: absolute
-			top: 180px
-			left: -50px
-			width: 100%
-			z-index: 3
-			filter: drop-shadow(24px 24px 6px rgb(0,0,0,.1))
 
-	@media (max-width: 767px)
-		.web-design__visual
-			top: 500px
-			width: 400px
-			height: 400px
-			.circle
-				transform: translateX(-50%)
-				left: 50%
-				top: 0px
-			img
-				left: 0px
-				top: 100px
-		.project
-			img
-				left: calc((100vw - 980px) / 2 - 2px)
-    			width: 250%
 
+/************************* Others *************************/
 
 .about-me
 	padding: 145px 20% 100px 25%
@@ -689,3 +755,7 @@
 		bottom: 1rem
 		right: 0px
 		bottom: 122px
+
+@media (max-width: 767px)
+	section.web-design
+		padding: 200px 0 0 0
