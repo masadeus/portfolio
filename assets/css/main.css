@@ -943,6 +943,7 @@ input[type=button]:focus {
   align-items: center;
   justify-content: space-between;
   padding: 60px 0;
+  max-width: 600px;
 }
 .contact__wrapper::before {
   content: "";
@@ -955,11 +956,11 @@ input[type=button]:focus {
 }
 .contact__visual {
   position: relative;
-  width: 40%;
+  width: 400px;
+  transform: translateX(-170px);
   z-index: 3;
   background-color: #fafafa;
   padding: 100px 0;
-  transform: translateX(50vw);
 }
 .contact__visual img {
   display: block;
@@ -1336,4 +1337,14 @@ input[type=button]:focus {
   background: #77acaa;
   padding: 5px 10px;
   font-weight: 600;
+}
+
+.contact .linkedin {
+  display: inline-block;
+  height: 32px;
+  width: auto;
+  position: absolute;
+  bottom: 1rem;
+  right: 0px;
+  bottom: 122px;
 }/*# sourceMappingURL=main.css.map */
