@@ -815,7 +815,7 @@ input[type=button]:focus {
     bottom: 0;
   }
   .about__visual {
-    bottom: -60px;
+    bottom: -90px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -842,6 +842,7 @@ input[type=button]:focus {
   }
   .about__visual {
     width: 335px;
+    bottom: 23px;
   }
   .about__content-blurb h2 {
     font-size: 32px;
@@ -898,7 +899,7 @@ input[type=button]:focus {
 @media (max-width: 767px) {
   .web-design {
     height: 525px;
-    padding: 60px 0;
+    padding: 300px 0;
   }
   .web-design__wrapper {
     justify-content: center;
@@ -1280,9 +1281,13 @@ input[type=button]:focus {
   max-height: 1200px;
 }
 
-.web-design.automatli .web-design__visual .circle {
-  height: 800px;
+.web-design.automatli .web-design__visual {
   width: 800px;
+  height: 800px;
+}
+.web-design.automatli .web-design__visual .circle {
+  height: 100%;
+  width: 100%;
   top: 150px;
   z-index: 1;
   left: -205px;
@@ -1292,9 +1297,25 @@ input[type=button]:focus {
   position: absolute;
   top: 180px;
   left: -50px;
-  width: 800px;
+  width: 100%;
   z-index: 3;
   filter: drop-shadow(24px 24px 6px rgba(0, 0, 0, 0.1));
+}
+@media (max-width: 767px) {
+  .web-design.automatli .web-design__visual {
+    top: 500px;
+    width: 400px;
+    height: 400px;
+  }
+  .web-design.automatli .web-design__visual .circle {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0px;
+  }
+  .web-design.automatli .web-design__visual img {
+    left: 0px;
+    top: 100px;
+  }
 }
 
 .about-me {

@@ -128,7 +128,7 @@
 				bottom: 0
 
 		&__visual
-			bottom: -60px
+			bottom: -90px
 			left: 50%
 			transform: translateX(-50%)
 
@@ -154,6 +154,7 @@
 
 		&__visual
 			width: 335px
+			bottom: 23px
 
 		&__content
 
@@ -225,7 +226,7 @@
 	@media (max-width: 767px)
 
 		height: 525px
-		padding: 60px 0
+		padding: 300px 0
 
 		&__wrapper
 			justify-content: center
@@ -607,10 +608,11 @@
 .web-design.automatli
 	// margin: 200px 0 0 0
 	.web-design__visual
-
+		width: 800px
+		height: 800px
 		.circle
-			height: 800px
-			width: 800px
+			height: 100%
+			width: 100%
 			top: 150px
 			z-index: 1
 			left: -205px
@@ -619,9 +621,27 @@
 			position: absolute
 			top: 180px
 			left: -50px
-			width: 800px
+			width: 100%
 			z-index: 3
 			filter: drop-shadow(24px 24px 6px rgb(0,0,0,.1))
+
+	@media (max-width: 767px)
+		.web-design__visual
+			top: 500px
+			width: 400px
+			height: 400px
+			.circle
+				transform: translateX(-50%)
+				left: 50%
+				top: 0px
+			img
+				left: 0px
+				top: 100px
+		.project
+			img
+				left: calc((100vw - 980px) / 2 - 2px)
+    			width: 250%
+
 
 .about-me
 	padding: 145px 20% 100px 25%
