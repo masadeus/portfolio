@@ -963,42 +963,18 @@ input[type=button]:focus {
   background-color: #fafafa;
   padding: 100px 0;
 }
-.contact__visual img {
+.contact__visual .contact-text {
   display: block;
   width: 100%;
 }
-.contact__form {
-  position: relative;
-  display: flex;
-  width: 47.5%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 15px 0;
-  background-color: #fafafa;
-  z-index: 1;
-}
-.contact__form-el {
-  padding: 0 0 0 15px;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: transparent;
-  border: 1px solid #9e9e9e;
-  border-radius: 3px;
-}
-.contact__form-el--name, .contact__form-el--email {
-  width: 45%;
-  height: 50px;
-}
-.contact__form-el--message {
-  width: 100%;
-  height: 150px;
-  margin: 20px 0 30px 0;
-  padding-top: 15px;
-  resize: none;
-}
-.contact__form input[type=submit] {
-  margin-left: auto;
-  padding: 10px 50px;
+.contact .linkedin {
+  display: inline-block;
+  height: 32px;
+  width: auto;
+  position: absolute;
+  bottom: 1rem;
+  right: 0px;
+  bottom: 122px;
 }
 @media (max-width: 991px) {
   .contact__heading {
@@ -1019,25 +995,28 @@ input[type=button]:focus {
     max-width: 75%;
     order: 2;
   }
-  .contact__form {
-    width: 600px;
-    max-width: 75%;
-    margin-bottom: 45px;
-    padding: 0 15px;
-  }
 }
 @media (max-width: 767px) {
+  .contact {
+    padding: 60px 2rem;
+  }
   .contact__heading {
     font-size: 32px;
   }
-  .contact__form-el--name, .contact__form-el--email {
-    width: 100%;
+  .contact__wrapper {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 55px 0;
   }
-  .contact__form-el--name {
-    margin-bottom: 10px;
+  .contact__visual {
+    max-width: 350px;
+    transform: translateX(0px);
   }
-  .contact__form-el--message {
-    margin: 10px 0 20px 0;
+  .contact__visual .contact-text {
+    transform: translateX(-28px);
+  }
+  .contact__visual .linkedin {
+    right: 23px;
   }
 }
 @media (max-width: 480px) {
@@ -1046,16 +1025,6 @@ input[type=button]:focus {
   }
   .contact__visual {
     max-width: 100%;
-  }
-  .contact__form {
-    max-width: 100%;
-    padding: 0;
-  }
-  .contact__form-el--name, .contact__form-el--email {
-    height: 40px;
-  }
-  .contact__form-el--message {
-    height: 90px;
   }
 }
 
@@ -1400,6 +1369,34 @@ input[type=button]:focus {
   opacity: 0.8;
   transform: translate(-200px, 400px);
 }
+@media (max-width: 767px) {
+  .web-design.abk {
+    padding: 0 0 100px 0;
+    margin-top: 400px;
+  }
+  .web-design.abk .web-design__visual {
+    width: 600px;
+    height: 600px;
+    top: -550px;
+  }
+  .web-design.abk .web-design__visual .circle {
+    background-image: linear-gradient(to right, #acf2fc, #d3f5e8, #d3f5e8, #acf2fc);
+    transform: translate(0, 0);
+    top: 0;
+    right: -30%;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+  .web-design.abk .web-design__visual img {
+    top: 0;
+    transform: translate(20%, 100px);
+    max-width: 110%;
+  }
+}
+.web-design.abk .project.shown {
+  max-height: 1200px;
+}
 .web-design.abk .project {
   background: linear-gradient(180deg, rgb(250, 250, 250) 0%, #e2f0fb 100%);
 }
@@ -1408,8 +1405,14 @@ input[type=button]:focus {
   max-width: 130vw;
   top: 470px;
 }
-.web-design.abk .project.shown {
-  max-height: 1200px;
+@media (max-width: 767px) {
+  .web-design.abk .project img {
+    max-width: 4000px;
+    max-height: 550px;
+    width: auto;
+    top: 0;
+    transform: translate(-100px, 50px);
+  }
 }
 
 /************************* Others *************************/
@@ -1453,16 +1456,6 @@ input[type=button]:focus {
   background: #77acaa;
   padding: 5px 10px;
   font-weight: 600;
-}
-
-.contact .linkedin {
-  display: inline-block;
-  height: 32px;
-  width: auto;
-  position: absolute;
-  bottom: 1rem;
-  right: 0px;
-  bottom: 122px;
 }
 
 @media (max-width: 767px) {
