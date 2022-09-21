@@ -716,9 +716,7 @@ input[type=button]:focus {
   display: block;
 }
 .introduction__content-el--name {
-  transform: translateX(-30px);
   opacity: 1;
-  padding-left: 15px;
   color: #bbb;
 }
 .introduction__content-el--description {
@@ -730,22 +728,21 @@ input[type=button]:focus {
   text-shadow: 10px 18px 35px rgba(88, 88, 88, 0.23);
 }
 .introduction__content-el--job {
-  transform: translateX(30px);
   text-align: right;
   opacity: 1;
-  padding-right: 25px;
+  padding-right: 24px;
   color: #bbb;
 }
 @media (max-width: 767px) {
   .introduction__content-el--name {
-    padding-left: 29px;
+    padding-left: 0px;
     font-weight: 700;
   }
   .introduction__content-el--description {
     font-size: 30vw;
   }
   .introduction__content-el--job {
-    padding-right: 35px;
+    padding-right: 0px;
     font-weight: 700;
   }
 }
@@ -1164,6 +1161,11 @@ input[type=button]:focus {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1140px) {
+  .project .project-copy-container {
+    margin-left: 40px;
+  }
+}
 @media (max-width: 767px) {
   .project {
     height: 0;
@@ -1205,6 +1207,21 @@ input[type=button]:focus {
   gap: 2rem;
   left: 53%;
   top: 266px;
+}
+@media (max-width: 1280px) {
+  .web-design.right .project .project-copy-container {
+    width: 500px;
+  }
+}
+@media (max-width: 1050px) {
+  .web-design.right .project .project-copy-container {
+    width: 400px;
+    flex-direction: column;
+    gap: 0;
+  }
+  .web-design.right .project .project-copy-container .project-copy {
+    border-right: 0;
+  }
 }
 @media (max-width: 767px) {
   .web-design.right .project .project-copy-container {
