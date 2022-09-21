@@ -875,6 +875,9 @@ section {
   }
 }
 @media (max-width: 411px) {
+  .about__wrapper {
+    height: 510px;
+  }
   .about .about__content-blurb {
     max-width: 75%;
     padding: 0 5px;
@@ -883,6 +886,10 @@ section {
   .about .about__content-blurb .blurb__copy {
     text-align: center;
     padding: 0 20px;
+  }
+  .about__visual {
+    width: 250px;
+    bottom: -30px;
   }
 }
 
