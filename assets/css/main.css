@@ -736,6 +736,19 @@ input[type=button]:focus {
   padding-right: 25px;
   color: #bbb;
 }
+@media (max-width: 767px) {
+  .introduction__content-el--name {
+    padding-left: 29px;
+    font-weight: 700;
+  }
+  .introduction__content-el--description {
+    font-size: 30vw;
+  }
+  .introduction__content-el--job {
+    padding-right: 35px;
+    font-weight: 700;
+  }
+}
 .introduction__arrow {
   position: absolute;
   bottom: 10%;
