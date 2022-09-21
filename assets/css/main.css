@@ -688,6 +688,17 @@ input[type=button]:focus {
   overflow: hidden;
 }
 
+article,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+section {
+  overflow-x: clip;
+}
+
 /************************* Introduction *************************/
 .introduction {
   position: relative;
