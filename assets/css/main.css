@@ -693,13 +693,7 @@ input[type=button]:focus {
   overflow: hidden;
 }
 
-article,
-figcaption,
-figure,
 footer,
-header,
-hgroup,
-main,
 section {
   overflow-x: clip;
 }
@@ -846,6 +840,9 @@ section {
     transform: translateX(-50%);
   }
   .about__content {
+    text-align: center;
+  }
+  .about__content .small-copy {
     text-align: center;
   }
   .about__content-blurb {
