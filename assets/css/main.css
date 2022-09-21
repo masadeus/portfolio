@@ -468,6 +468,11 @@ input[type=button]:focus {
   background-color: #fafafa;
   transform: translateX(30px);
 }
+@media (max-width: 991px) {
+  .blurb--framed {
+    transform: translateX(0);
+  }
+}
 .blurb__heading {
   margin: 0 0 15px 0;
   color: #585858;
@@ -869,18 +874,6 @@ section {
     font-size: 32px;
   }
 }
-@media (max-width: 480px) {
-  .about {
-    height: 480px;
-  }
-  .about__wrapper::before {
-    display: none;
-  }
-  .about__visual {
-    width: 290px;
-    max-width: 100%;
-  }
-}
 
 /************************* Web Design *************************/
 .web-design {
@@ -942,15 +935,6 @@ section {
     transform: translateX(-50%);
     width: 523px;
     height: 376px;
-  }
-}
-@media (max-width: 480px) {
-  .web-design {
-    height: 425px;
-  }
-  .web-design__visual {
-    width: 392px;
-    height: 275px;
   }
 }
 
@@ -1038,14 +1022,6 @@ section {
   }
   .contact__visual .linkedin {
     right: 23px;
-  }
-}
-@media (max-width: 480px) {
-  .contact__wrapper::before {
-    display: none;
-  }
-  .contact__visual {
-    max-width: 100%;
   }
 }
 
