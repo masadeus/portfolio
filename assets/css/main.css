@@ -874,6 +874,17 @@ section {
     font-size: 32px;
   }
 }
+@media (max-width: 411px) {
+  .about .about__content-blurb {
+    max-width: 75%;
+    padding: 0 5px;
+    margin: auto;
+  }
+  .about .about__content-blurb .blurb__copy {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
 
 /************************* Web Design *************************/
 .web-design {
@@ -1024,6 +1035,23 @@ section {
     right: 23px;
   }
 }
+@media (max-width: 411px) {
+  .contact .title {
+    margin-bottom: 0;
+  }
+  .contact__visual {
+    max-width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+  }
+  .contact__visual .contact-text {
+    width: 300px;
+  }
+  .contact__visual .linkedin {
+    bottom: 40px;
+    right: 5px;
+  }
+}
 
 /************************* Footer *************************/
 .footer {
@@ -1168,6 +1196,11 @@ section {
   }
   .project .project-copy-container .project-copy:first-child {
     border-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .project .project-copy-container {
+    padding: 0 0.5rem 0 3rem;
   }
   .project img {
     width: 1700px;
@@ -1363,6 +1396,11 @@ section {
   }
   .web-design.sojournal .project.shown img {
     top: 250px;
+  }
+}
+@media (max-width: 411px) {
+  .web-design.sojournal .project.shown {
+    height: 750px;
   }
 }
 

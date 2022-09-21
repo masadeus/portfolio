@@ -64,7 +64,6 @@ section
 					padding-right: 0px
 					font-weight: 700
 
-
 	&__arrow
 		position: absolute
 		bottom: 10%
@@ -85,7 +84,6 @@ section
 
 				&--description
 					font-size: 340px
-
 
 	@media (max-height: 540px)
 
@@ -182,7 +180,14 @@ section
 				h2
 					font-size: 32px
 
-
+	@media (max-width: 411px)
+		.about__content-blurb
+			max-width: 75%
+			padding: 0 5px
+			margin: auto
+			.blurb__copy
+				text-align: center
+				padding: 0 20px
 
 /************************* Web Design *************************/
 
@@ -256,8 +261,6 @@ section
 			width: 523px
 			height: 376px
 
-
-
 /************************* Contact *************************/
 
 .contact
@@ -302,7 +305,6 @@ section
 		right: 0px
 		bottom: 122px
 
-
 	@media (max-width: 991px)
 
 		&__heading
@@ -323,7 +325,6 @@ section
 			max-width: 75%
 			order: 2
 
-
 	@media (max-width: 767px)
 		padding: 60px 2rem
 		&__heading
@@ -341,10 +342,19 @@ section
 			.linkedin
 				right: 23px
 
+	@media (max-width: 411px)
+		.title
+			margin-bottom: 0
+		&__visual
+			max-width: 100%
+			padding: 20px 0
+			margin: 20px 0
 
-
-
-
+			.contact-text
+				width: 300px
+			.linkedin
+				bottom: 40px
+				right: 5px
 
 
 
@@ -482,6 +492,9 @@ section
 			.project-copy:first-child
 				border-right: 0
 
+	@media (max-width: 767px)
+		.project-copy-container
+			padding: 0 0.5rem 0 3rem
 		img
 			width: 1700px
 			position: relative
@@ -643,13 +656,16 @@ section
 			img
 				top: 250px
 
+	@media (max-width: 411px)
+		.project.shown
+			height: 750px
 /************************* ABK *************************/
 
 .web-design.abk
 	.web-design__wrapper
 		@media (max-width: 767px)
-				margin-top: 0
-				top: 0
+			margin-top: 0
+			top: 0
 	.web-design__visual
 
 		.circle
@@ -705,10 +721,6 @@ section
 				top: 0
 				transform: translate(-100px, 50px)
 
-
-
-
-
 /************************* Others *************************/
 
 .about-me
@@ -746,7 +758,6 @@ section
 		background: $c-highlight
 		padding: 5px 10px
 		font-weight: 600
-
 
 @media (max-width: 767px)
 	section.web-design
