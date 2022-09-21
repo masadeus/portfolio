@@ -693,8 +693,18 @@ input[type=button]:focus {
   overflow: hidden;
 }
 
+article,
+aside,
+details,
+figcaption,
 footer,
-section {
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   overflow-x: clip;
 }
 
@@ -1132,7 +1142,7 @@ section {
 
 .project.shown {
   opacity: 1;
-  max-height: 2000px;
+  max-height: 1300px;
   padding: 40px 0;
 }
 
@@ -1286,6 +1296,9 @@ section {
   right: 200vw;
 }
 
+.web-design.automatli .project img {
+  max-height: 1100px;
+}
 .web-design.automatli .web-design__visual {
   width: 800px;
   height: 800px;
@@ -1321,6 +1334,12 @@ section {
     top: 100px;
   }
 }
+@media (max-width: 411px) {
+  .web-design.automatli .project img {
+    left: 30px;
+    width: 1300px;
+  }
+}
 
 /************************* Sojournal *************************/
 .web-design.sojournal {
@@ -1354,13 +1373,13 @@ section {
   top: 410px;
   z-index: 1;
   left: 50%;
-  width: 150%;
+  max-width: 150%;
   transform: translateX(-50%);
-  max-width: 2500px;
+  max-height: 1100px;
 }
 @media (max-width: 767px) {
   .web-design.sojournal .project img {
-    width: 250%;
+    max-width: 250%;
   }
 }
 .web-design.sojournal .project.shown {
@@ -1406,6 +1425,11 @@ section {
   .web-design.sojournal .project.shown {
     height: 750px;
   }
+  .web-design.sojournal .project.shown img {
+    left: 30px;
+    max-width: 1400px;
+    top: 100px;
+  }
 }
 
 /************************* ABK *************************/
@@ -1431,7 +1455,7 @@ section {
 @media (max-width: 767px) {
   .web-design.abk {
     padding: 0 0 100px 0;
-    margin-top: 400px;
+    margin-top: 500px;
   }
   .web-design.abk .web-design__visual {
     width: 600px;
