@@ -1342,6 +1342,58 @@ summary {
   }
 }
 
+/************************* Hellmann *************************/
+.web-design.hellmann .web-design__visual {
+  z-index: 2;
+  top: 200px;
+}
+
+.web-design.hellmann .project img {
+  max-height: 1100px;
+}
+.web-design.hellmann .web-design__visual {
+  width: 800px;
+  height: 800px;
+}
+.web-design.hellmann .web-design__visual .circle {
+  height: 100%;
+  width: 100%;
+  top: 150px;
+  z-index: 1;
+  left: -205px;
+  background-image: linear-gradient(to left, #fcecd3, #dbe7fb);
+}
+.web-design.hellmann .web-design__visual img {
+  position: absolute;
+  top: 84px;
+  left: -123px;
+  width: 120%;
+  z-index: 3;
+  filter: drop-shadow(2px 24px 8px rgba(0, 0, 0, 0.1));
+}
+@media (max-width: 767px) {
+  .web-design.hellmann .web-design__visual {
+    width: 400px;
+    height: 400px;
+  }
+  .web-design.hellmann .web-design__visual .circle {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0px;
+  }
+  .web-design.hellmann .web-design__visual img {
+    left: 0px;
+    top: 100px;
+  }
+}
+@media (max-width: 411px) {
+  .web-design.hellmann .project img {
+    left: 30px;
+    width: 1300px;
+    top: -60px;
+  }
+}
+
 /************************* Sojournal *************************/
 .web-design.sojournal {
   height: auto;
