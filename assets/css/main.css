@@ -966,7 +966,7 @@ summary {
 /************************* Contact *************************/
 .contact {
   position: relative;
-  padding: 60px 0;
+  padding: 140px 0 60px 0;
   background-color: #fafafa;
 }
 .contact__wrapper {
@@ -1342,6 +1342,26 @@ summary {
   }
 }
 
+/************************* Hellmann *************************/
+
+.web-design.sojournal.hellmann .project img {
+  top: 130px;
+  z-index: 1;
+  left: 50%;
+  max-width: 170%;
+  transform: translateX(-40%);
+  max-height: 1300px;
+}
+
+ .web-design.hellmann .web-design__visual .circle {
+    background-image: linear-gradient(to left, #fb858766, #8fb4f7b8, #ffffff7a);
+    transform: translate(0, 0);
+    top: -90px;
+    right: 20%;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+  }
 /************************* Sojournal *************************/
 .web-design.sojournal {
   height: auto;
@@ -1364,8 +1384,8 @@ summary {
   transform: translateX(50%);
 }
 .web-design.sojournal .circle {
-  width: 100%;
-  height: 100%;
+  width: 1200px;
+  height: 1200px;
 }
 .web-design.sojournal .project {
   max-height: 800px;
